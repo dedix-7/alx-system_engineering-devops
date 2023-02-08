@@ -1,1 +1,1 @@
-# trying to add a repository remotely
+just trying to navigate git
