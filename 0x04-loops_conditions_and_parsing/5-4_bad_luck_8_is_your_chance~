@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# a script to print best chool 10 times
+
+tree=1
+
+while [ "$tree" -le 10 ]
+do
+    if [ "$tree" -eq 9 ]
+    then
+	echo "Best School"
+	echo "Hi"
+	tree=$((tree + 1))
+	continue
+    fi
+    echo "Best School"
+    tree=$((tree + 1))
+done
