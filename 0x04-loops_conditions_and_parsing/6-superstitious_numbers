@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# a script to print best chool 10 times
+
+tree=1
+
+while [ "$tree" -le 10 ]
+do
+    echo "$tree"
+    case $tree in
+	4) echo "bad luck from China";;
+	9) echo "bad luck from Japan";;
+	17) echo "bad luck from Italy";;
+    esac
+    tree=$((tree + 1))
+done

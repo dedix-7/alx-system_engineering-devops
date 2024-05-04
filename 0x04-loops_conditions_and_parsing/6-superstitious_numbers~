@@ -5,13 +5,15 @@ tree=1
 
 while [ "$tree" -le 10 ]
 do
-    if [ "$tree" -eq 9 ]
+    echo "$tree"
+    if [ "$tree" -eq 4 ]
     then
+	echo "bad luck"
+    elif [ "$tree" -eq 8 ]
+    then
+	echo "good luck"
+    else
 	echo "Best School"
-	echo "Hi"
-	tree=$((tree + 1))
-	continue
     fi
-    echo "Best School"
     tree=$((tree + 1))
 done
