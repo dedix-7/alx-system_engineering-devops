@@ -3,7 +3,7 @@
 
 tree=1
 
-while [ "$tree" -le 10 ]
+while [ "$tree" -le 20 ]
 do
     echo "$tree"
     case $tree in
