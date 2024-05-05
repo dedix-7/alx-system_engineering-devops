@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# a scrit to display files in curret dir
+# It only displays the first lins after the dash
+
+for file in *
+do
+    echo "$file" | cut -d '-' -f 2
+done
