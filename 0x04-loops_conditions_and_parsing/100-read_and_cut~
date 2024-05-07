@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+# a script to read and parse etc/passwd file
