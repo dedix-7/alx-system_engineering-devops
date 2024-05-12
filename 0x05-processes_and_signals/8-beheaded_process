@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# send a kill signal that can't e trapped
+
+id=$( ps -auxf | pgrep -f 'highlander' )
+kill -9 "$id"
