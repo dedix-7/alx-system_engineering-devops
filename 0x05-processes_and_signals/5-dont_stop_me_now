@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# a script to kill a process
+
+id=$( ps -auxf | pgrep -f "beyond" )
+kill -15 "$id"
