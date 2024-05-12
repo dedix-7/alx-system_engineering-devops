@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-# A script tot show the bash and script pid
-
-echo $$ "bash"
-echo $BASHPID "bash"

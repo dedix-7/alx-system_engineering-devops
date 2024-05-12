@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-# a script to kill a process
-
-id=$( ps -auxf | pgrep -f "infinity_and _beyond" )
-kill -15 "$id"
