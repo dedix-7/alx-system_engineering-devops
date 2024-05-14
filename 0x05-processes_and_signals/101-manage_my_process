@@ -2,6 +2,10 @@
 # a script that manages a processs on startup
 
 id="$#"
+
+# copy the p[rocess to the init.d d dir
+cp manage_my_process /etc/init.d/manage_my_process
+
 if [ "$id" -ne 1 ]
 then
     echo "Usage: manage_my_process {start|stop|restart}"
