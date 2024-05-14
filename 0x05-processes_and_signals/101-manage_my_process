@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# a script that manages a processs on startup
+
+id="$#"
+if [ "$id" -ne 1 ]
+then
+    echo "Usage: manage_my_process {start|stop|restart}"
+    exit
+fi
+case x
