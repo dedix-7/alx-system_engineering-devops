@@ -7,4 +7,24 @@ then
     echo "Usage: manage_my_process {start|stop|restart}"
     exit
 fi
-case x
+case "$1" in
+    "start")
+	/etc/init.d/manage_my_process start
+	echo $$ >> /var/run/my_process.pid
+	echo "manage_my_process started"
+        ;;
+    "stop")
+	/etc/init.d/manage_my_process stop
+	rm -f /var/run/my_process.pid
+	echo "manage_my_process stopped"
+	;;
+    "restart")
+	/etc/init.d/manage_my_process stop
+	rm -f /var/run/my_process.pid
+	/etc/init.d/manage_my_process start
+	echo $$ >> /var/run/my_process.pid
+	echo "manage_my_process restarted"
+	;;
+    *)
+	echo "Usage: manage_my_process {start|stop|restart}"
+esac
