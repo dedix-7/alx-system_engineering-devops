@@ -22,6 +22,7 @@ int infinite_while(void)
 void childpro(void)
 {
 	pid_t child;
+
 	child = fork();
 
 	if (!(child))
