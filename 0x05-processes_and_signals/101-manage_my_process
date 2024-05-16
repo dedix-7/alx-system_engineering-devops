@@ -19,7 +19,6 @@ case "$1" in
     "stop")
 	pkill -f ./manage_my_process
 	rm /var/run/my_process.pid
-	echo "Started"
 	echo "manage_my_process stopped"
 	;;
     "restart")
