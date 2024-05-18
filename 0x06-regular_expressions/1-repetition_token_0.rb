@@ -3,6 +3,6 @@
 
 i = 0
 while (i < ARGV.length)
-  puts ARGV[i].scan(/\b[a-z]*t{2,5}[a-z]*/).join
+  puts ARGV[i].scan(/.*t{2,5}.*/).join
   i += 1
 end
