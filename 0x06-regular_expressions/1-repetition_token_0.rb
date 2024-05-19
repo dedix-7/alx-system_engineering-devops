@@ -3,6 +3,6 @@
 
 i = 0
 while (i < ARGV.length)
-  puts ARGV[i].scan(/hbt{2,}/).join
+  puts ARGV[i].scan(/hbt{2,5}n/).join
   i += 1
 end
