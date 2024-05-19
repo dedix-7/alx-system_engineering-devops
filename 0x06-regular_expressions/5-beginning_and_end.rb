@@ -4,6 +4,6 @@
 
 i = 0
 while (i < ARGV.length)
-  puts ARGV[i].scan(/^h.*n$/).join
+  puts ARGV[i].scan(/^h.n$/).join
   i += 1
 end
