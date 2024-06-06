@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/env bash
 
 # Use ss command for wider compatibility
 ss -lntup | awk '{print $4, $6, $7}' | grep 'LISTEN'
