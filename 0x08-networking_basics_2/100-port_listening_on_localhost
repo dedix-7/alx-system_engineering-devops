@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# a script that listens to a port
+
+#!/bin/bash
+
+PORT=98
+
+# Start listening on port 98 with nc in loopback mode (-l 127.0.0.1)
+while true; do
+  # echo "Listening on port $PORT..."
+  nc -l 127.0.0.1 $PORT
+  # echo "Connection closed. Waiting for new connections..."
+done
