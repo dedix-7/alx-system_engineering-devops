@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# a script to display all active ipv4 addresses on the machine it executes
+
+# Get all IPv4 addresses
+###  ip addr show | grep 'inet ' | awk '{print $2}'
+
+# Filter for active interfaces (UP and LOWER_UP flags)
+ip addr show | grep 'state UP' | awk '/inet inet / {print $2}'

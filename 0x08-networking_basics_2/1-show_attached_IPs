@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# a script to display all active ipv4 addresses on the machine it executes
+
+# Get all IPv4 addresses
+###  ip addr show | grep 'inet ' | awk '{print $2}'
+
+# Filter for active interfaces (UP and LOWER_UP flags)
+# ip addr show | grep 'state UP' | awk '/inet inet / {print $2}'
+# My sandbox can't use the ip command
+# Hnece I use ifconfig
+
+# Get all interfaces with IP addresses
+interfaces=$(ifconfig | grep 'inet addr:' | awk '{print $1}')
+
+# Loop through interfaces
+for interface in $interfaces; do
+  # Extract IP address
+  ip_address=$(ifconfig $interface | grep 'inet addr:' | awk '{print $2}')
+
+  # Print IP address
+  echo "$ip_address"
+done
