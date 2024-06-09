@@ -15,7 +15,7 @@ interfaces=$(ifconfig | grep 'inet addr:' | awk '{print $1}')
 # Loop through interfaces
 for interface in $interfaces; do
   # Extract IP address
-  ip_address=$(ifconfig $interface | grep 'inet addr:' | awk '{print $2}')
+  ip_address=$(ifconfig "$interface" | grep 'inet addr:' | awk '{print $2}')
 
   # Print IP address
   echo "$ip_address"
