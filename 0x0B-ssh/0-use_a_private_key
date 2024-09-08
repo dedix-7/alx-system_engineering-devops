@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# connects tpo the serve uasing ssh
 # Server address (replace with your actual server IP or hostname)
 SERVER="54.160.91.121"
 
