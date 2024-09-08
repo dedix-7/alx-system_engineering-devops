@@ -1,16 +1,4 @@
 #!/usr/bin/env bash
 # connects tpo the serve uasing ssh
-# Server address (replace with your actual server IP or hostname)
-SERVER="54.160.91.121"
 
-# Username
-USERNAME="ubuntu"
-
-# Path to the private key
-PRIVATE_KEY="~/.ssh/school"
-
-# Construct the SSH command
-SSH_CMD="ssh -i $USERNAME@$SERVER $PRIVATE_KEY"
-
-# Execute the SSH command
-$SSH_CMD
+ssh ubuntu@54.160.91.121 -i ~/.ssh/school
