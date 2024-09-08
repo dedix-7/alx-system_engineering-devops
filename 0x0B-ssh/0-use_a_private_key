@@ -10,7 +10,7 @@ USERNAME="ubuntu"
 PRIVATE_KEY="~/.ssh/school"
 
 # Construct the SSH command
-SSH_CMD="ssh -i $PRIVATE_KEY $USERNAME@$SERVER"
+SSH_CMD="ssh -i $USERNAME@$SERVER $PRIVATE_KEY"
 
 # Execute the SSH command
 $SSH_CMD
