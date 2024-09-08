@@ -7,7 +7,7 @@ SERVER="54.160.91.121"
 USERNAME="ubuntu"
 
 # Path to the private key
-PRIVATE_KEY=~/.ssh/school
+PRIVATE_KEY="~/.ssh/school"
 
 # Construct the SSH command
 SSH_CMD="ssh -i $PRIVATE_KEY $USERNAME@$SERVER"
